@@ -1,126 +1,140 @@
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background: #f2e8dc; /* jaśniejszy beż, bliżej bieli */
-    color: #4b3d34;
-    padding: 40px 20px;
-  }
-  
-  /* HEADER */
-  header {
-    text-align: center;
-    margin-bottom: 60px;
-    padding: 40px 20px;
-  }
-  
-  h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  
-  p {
-    font-size: 1.2em;
-    color: #7c6b5f;
-  }
-  
-  .links a {
-    margin: 0 10px;
-    color: #4b3d34;
-    text-decoration: none;
-    border-bottom: 1px solid #4b3d34;
-  }
-  
-  /* SEKCJE */
-  section {
-    margin-bottom: 60px;
-  }
-  
-  h2 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-  }
-  
-  /* GALERIA */
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
-  .gallery img {
-    width: 220px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: zoom-in;
-  }
-  
-  .gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  /* BIO + DANE */
-  .about {
-    padding: 40px;
-    border-radius: 16px;
-  }
-  
-  .bio-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .bio-text {
-    flex: 2;
-    font-size: 1.1em;
-    color: #4b3d34;
-  }
-  
-  .bio-stats {
-    flex: 1;
-  }
-  
-  .bio-stats ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-    color: #4b3d34;
-  }
-  
-  .bio-stats li {
-    margin-bottom: 8px;
-  }
-  
-  /* STOPKA - WSPÓŁPRACA */
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid rgba(75, 61, 52, 0.1);
-    margin-top: 60px;
-    border-radius: 20px 20px 0 0;
-  }
-  
-  footer h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #4b3d34;
-  }
-  
-  .collab-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1em;
-    color: #4b3d34;
-  }
-  
-  .collab-list li {
-    margin: 6px 0;
-  }
-  
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f2e8dc; /* jaśniejszy beż, bliżej bieli */
+  color: #4b3d34;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: #7c6b5f;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #4b3d34;
+  text-decoration: none;
+  border-bottom: 1px solid #4b3d34;
+}
+
+/* SEKCJE */
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* GALERIA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* BIO + DANE */
+.about {
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.bio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.bio-text {
+  flex: 2 1 400px;
+  font-size: 1.1em;
+  color: #4b3d34;
+}
+
+.bio-stats {
+  flex: 1 1 200px;
+  max-width: 260px;
+}
+
+.bio-stats ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  color: #4b3d34;
+}
+
+.bio-stats li {
+  margin-bottom: 8px;
+}
+
+/* SEKCJA WSPÓŁPRAC */
+.collab-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.collab-section h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #4b3d34;
+}
+
+.collab-section p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.collab-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  color: #4b3d34;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* STOPKA */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(75, 61, 52, 0.1);
+  margin-top: 60px;
+  border-radius: 20px 20px 0 0;
+}
